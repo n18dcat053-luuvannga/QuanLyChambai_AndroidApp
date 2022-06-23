@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity"
+    android:background="@drawable/gradient_background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/welcome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="100dp"
+            android:gravity="left"
+            android:text="Welcome back,"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+<!--        <ImageView-->
+<!--            android:id="@+id/userManager"-->
+<!--            android:layout_width="40dp"-->
+<!--            android:layout_height="40dp"-->
+<!--            android:layout_marginHorizontal="30dp"-->
+<!--            android:background="@drawable/icon_home_admin" />-->
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/desRole"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="100dp"
+        android:gravity="left"
+        android:text="Vui lòng chọn các chức năng bên quản lý"
+        android:textColor="#FF0606"
+        android:textSize="15dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/mangerGV"
+                android:layout_marginTop="10dp"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginStart="50dp"
+                android:background="@drawable/icon_home_giaovien" />
+
+            <TextView
+                android:id="@+id/labelGV"
+                android:layout_below="@+id/mangerGV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginStart="50dp"
+                android:text="QUẢN LÝ GIÁO VIÊN"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/qlmonhocMain"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="70dp"
+                android:background="@drawable/icon_home_monhoc" />
+
+            <TextView
+                android:id="@+id/labelMH"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/qlmonhocMain"
+                android:layout_marginStart="70dp"
+                android:gravity="center"
+                android:text="QUẢN LÝ MÔN HỌC"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/managerPCB"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="50dp"
+                android:background="@drawable/icon_home_pcb" />
+
+            <TextView
+                android:id="@+id/labelPCB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/managerPCB"
+                android:layout_marginStart="50dp"
+                android:gravity="center"
+                android:text="PHIẾU CHẤM BÀI"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnQLTTPCB"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/icon_home_ttpcb" />
+
+            <TextView
+                android:id="@+id/labelTTPCB"
+                android:layout_below="@id/btnQLTTPCB"
+                android:text="TT PHIẾU CHẤM BÀI"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginStart="70dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnhoadon"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/icon_home_receipt" />
+
+            <TextView
+                android:id="@+id/labelHoaDon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btnhoadon"
+                android:layout_marginStart="50dp"
+                android:gravity="center"
+                android:text="HÓA ĐƠN"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnThongKe"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/icon_home_chart" />
+            <TextView
+                android:id="@+id/labelChart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btnThongKe"
+                android:gravity="center"
+                android:text="Thống kê"
+                android:layout_marginStart="100dp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/logOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/gradient_button"
+        android:padding="15dp"
+        android:text="Đăng xuất" />
+</LinearLayout>

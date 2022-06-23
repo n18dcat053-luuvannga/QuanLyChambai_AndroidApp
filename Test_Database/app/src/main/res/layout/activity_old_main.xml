@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_marginTop="20dp"
+        android:id="@+id/mangerGV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Quản lý giáo viên"
+        android:background="@drawable/gradient_button"
+        android:paddingHorizontal="20dp"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_marginTop="20dp"
+        android:id="@+id/qlmonhocMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Quản lý môn học"
+        android:paddingHorizontal="20dp"
+        android:background="@drawable/gradient_button"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_marginTop="20dp"
+        android:id="@+id/managerPCB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Quản lý phiếu chấm bài"
+        android:paddingHorizontal="20dp"
+        android:background="@drawable/gradient_button"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_marginTop="20dp"
+        android:id="@+id/btnQLTTPCB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Quản lý thông tin phiếu chấm bài"
+        android:paddingHorizontal="20dp"
+        android:background="@drawable/gradient_button"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_marginTop="20dp"
+        android:id="@+id/btnhoadon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Xuất phiếu thanh toán"
+        android:paddingHorizontal="20dp"
+        android:background="@drawable/gradient_button"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnqlUser"
+        android:text="Quản lí nhân viên"
+        android:paddingHorizontal="20dp"
+        android:background="@drawable/gradient_button"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnThongKe"
+        android:text="Thống kê"
+        android:paddingHorizontal="20dp"
+        android:background="@drawable/gradient_button"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"/>
+</LinearLayout>

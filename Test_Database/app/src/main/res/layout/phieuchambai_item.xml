@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="10">
+
+    <TextView
+        android:textAlignment="center"
+        android:layout_weight="3"
+        android:id="@+id/rowSoPhieu"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:text="SoPhieu"
+        android:singleLine="true"
+        android:ellipsize = "end"
+        android:padding = "5dp"
+        android:background = "@drawable/cell_shape"
+        android:textColor="@color/black"
+        android:textSize="14sp"/>
+    <TextView
+        android:textAlignment="center"
+        android:layout_weight="4"
+        android:id="@+id/rowNgayGiao"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:text="NgayGiao"
+        android:background = "@drawable/cell_shape"
+        android:padding = "5dp"
+        android:textSize="14sp"
+        android:textColor="@color/black"/>
+    <TextView
+        android:textAlignment="center"
+        android:layout_weight="3"
+        android:id="@+id/rowMaGV"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:text="MaGiaoVien"
+        android:padding = "5dp"
+        android:background = "@drawable/cell_shape"
+        android:textSize="14sp"
+        android:textColor="@color/black"/>
+
+</LinearLayout>

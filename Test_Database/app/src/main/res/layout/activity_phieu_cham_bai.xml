@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PhieuChamBai.PhieuChamBaiActivity"
+    android:background="@drawable/gradient_background">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="QUẢN LÍ PHIẾU CHẤM BÀI"
+        style="@style/CustomTextView"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="122dp"
+        android:src="@drawable/recordz" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnAddPCB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="15dp"
+        android:layout_margin="10dp"
+        android:text="Thêm phiếu chấm bài"
+        android:background="@drawable/gradient_button"
+        android:paddingHorizontal="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background = "@color/colorcell">
+
+        <TextView
+            android:id="@+id/txtSoPhieu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:background="@drawable/cell_shape"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:text="Số phiếu"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtNgayGiao"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:background="@drawable/cell_shape"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Ngày giao"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/txtMaGV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:background="@drawable/cell_shape"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Mã giáo viên"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lvPCB"
+        android:layout_width="fill_parent"
+        android:layout_height="192dp"
+        android:divider="@null" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/botNavPCB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="100dp"
+            app:itemBackground="@color/colorcell"
+            app:itemTextColor="@color/white"
+            app:menu="@menu/menu" />
+    </RelativeLayout>
+</LinearLayout>

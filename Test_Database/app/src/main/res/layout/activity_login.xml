@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bglogin"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/logo"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/loginLable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="230dp"
+        android:layout_marginEnd="50dp"
+        android:gravity="right"
+        android:text="Đăng nhập"
+        android:textColor="@color/white"
+        android:textSize="25dp" />
+
+
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/usernameLable"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginStart="60dp"-->
+    <!--        android:layout_marginTop="370dp"-->
+    <!--        android:layout_marginEnd="50dp"-->
+    <!--        android:text="USERNAME"-->
+    <!--        android:textColor="@color/purple_500"-->
+    <!--        android:textSize="12dp"-->
+    <!--        android:textStyle="bold" />-->
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginLable"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/input_custom"
+        android:drawableLeft="@drawable/ic_baseline_person_24"
+        android:hint="Tên đăng nhập"
+        android:paddingLeft="15dp"
+        android:paddingTop="14dp"
+        android:paddingBottom="14dp"
+        android:textSize="14dp" />
+
+
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/passwordLable"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_below="@+id/username"-->
+    <!--        android:layout_marginStart="60dp"-->
+    <!--        android:layout_marginEnd="50dp"-->
+    <!--        android:text="PASSWORD"-->
+    <!--        android:textColor="@color/purple_500"-->
+    <!--        android:textSize="12dp"-->
+    <!--        android:textStyle="bold" />-->
+
+    <EditText
+        android:id="@+id/pasword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/username"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/input_custom"
+        android:drawableLeft="@drawable/ic_baseline_lock_24"
+        android:hint="Mật khẩu"
+        android:inputType="textPassword"
+        android:paddingLeft="15dp"
+        android:paddingTop="14dp"
+        android:paddingBottom="14dp"
+        android:textSize="14dp" />
+
+    <!--    <com.google.android.material.button.MaterialButton-->
+    <!--        android:id="@+id/btnLogin"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_below="@id/pasword"-->
+    <!--        android:layout_centerHorizontal="true"-->
+    <!--        android:layout_marginTop="35dp"-->
+    <!--        android:text="Login" />-->
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnLogin"
+        android:layout_width="310dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/pasword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_style_state"
+        android:text="Đăng nhập"
+        android:textColor="@color/white" />
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/forgetLable"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_below="@+id/pasword"-->
+    <!--        android:layout_marginTop="2dp"-->
+    <!--        android:layout_marginRight="52dp"-->
+    <!--        android:gravity="right"-->
+    <!--        android:text="FORGOT PASSWORD?"-->
+    <!--        android:textColor="@color/black"-->
+    <!--        android:textSize="12dp"-->
+    <!--        android:textStyle="bold" />-->
+
+
+    <TextView
+        android:id="@+id/registerLable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnLogin"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="250dp"
+        android:gravity="left"
+        android:text="Đăng ký"
+        android:textColor="@color/purple_500"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/forgetLable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnLogin"
+        android:layout_marginStart="210dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="50dp"
+        android:gravity="right"
+        android:text="Quên mật khẩu?"
+        android:textColor="@color/purple_500"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <!--    <androidx.appcompat.widget.AppCompatButton-->
+    <!--        android:id="@+id/btnSignup"-->
+    <!--        android:text="Sign Up"-->
+    <!--        android:layout_width="150dp"-->
+    <!--        android:layout_height="40dp"-->
+    <!--        android:layout_below="@id/btnLogin"-->
+    <!--        android:layout_marginTop="20dp"-->
+    <!--        android:background="@drawable/button_style_state"-->
+    <!--        android:layout_centerHorizontal="true"-->
+    <!--        android:textColor="@color/white"-->
+    <!--        />-->
+
+
+
+</RelativeLayout>

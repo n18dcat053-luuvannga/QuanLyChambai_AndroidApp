@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.n18dcat077.test_database">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Cuối kỳ nhóm 24"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Test_Database"
+        tools:replace="android:label">
+        <activity
+            android:name=".OTP.VerifyOTPActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OTP.SendOTPActivity"
+            android:exported="false" />
+        <activity
+            android:name=".gotoChart"
+            android:exported="false" />
+        <activity
+            android:name=".chart"
+            android:exported="false" />
+        <activity
+            android:name=".chart2"
+            android:exported="false" />
+        <activity
+            android:name=".StartUpAnimationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Mail.FogotActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Mail.VerifyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SignupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OldMainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".User.UserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".User.EditUser"
+            android:exported="false" />
+        <activity
+            android:name=".User.AddUser"
+            android:exported="false" />
+        <activity
+            android:name=".TTPCB.QuanLiTTPCB"
+            android:exported="false" />
+        <activity
+            android:name=".TTPCB.SuaTTPCB"
+            android:exported="false" />
+        <activity
+            android:name=".TTPCB.ThemTTPCB"
+            android:exported="false" />
+        <activity
+            android:name=".MonHoc.SuaMonHoc"
+            android:exported="false" />
+        <activity
+            android:name=".MonHoc.ThemMonHoc"
+            android:exported="false" />
+        <activity
+            android:name=".MonHoc.QuanLiMonHoc"
+            android:exported="false" />
+        <activity
+            android:name=".PhieuChamBai.EditPhieuChamBaiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PhieuChamBai.AddPhieuChamBaiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PhieuChamBai.PhieuChamBaiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GiaoVien.ManagerGiaoVienActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GiaoVien.EditGiaoVienActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GiaoVien.AddGiaoVienActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Hoadon.DsGiaoVien"
+            android:exported="false" />
+        <activity
+            android:name=".Hoadon.PhieuThanhToan"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
